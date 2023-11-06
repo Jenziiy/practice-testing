@@ -16,15 +16,17 @@ const caesarCipher = (aString) => {
 };
 
 const analyzeArray = (arr) => {
-  const sortedArray = arr.sort((a,b) => a+b);
+  let sortedArray = arr.sort((a,b) => a-b);
   return {
-    average: () => parseInt(sortedArray.reduce((a,b) => a + b)/sortedArray.length),
-    min: () => sortedArray[0],
-    max: () => sortedArray[sortedArray.length-1],
-    length: () => sortedArray.length,
+    average: parseInt(sortedArray.reduce((a,b) => a + b)/sortedArray.length),
+    min: sortedArray[0],
+    max: sortedArray[sortedArray.length-1],
+    length: sortedArray.length
   };
 }
 
+
+console.log(analyzeArray([1,8,3,4,2,6]))
 
 
 module.exports = {
@@ -32,4 +34,5 @@ capitalize,
 reverseString,
 calculator,
 caesarCipher,
+analyzeArray,
 }
