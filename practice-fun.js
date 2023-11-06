@@ -25,10 +25,6 @@ const analyzeArray = (arr) => {
   };
 }
 
-
-console.log(analyzeArray([1,8,3,4,2,6]))
-
-
 module.exports = {
 capitalize,
 reverseString,
