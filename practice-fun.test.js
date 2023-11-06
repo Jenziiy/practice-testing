@@ -19,4 +19,9 @@ test('caesarCipher outputs letter+3', () => {
   expect(practiceFun.caesarCipher('hallo')).toBe('kdoor');
 });
 
+test('caesarCipher outputs letter+3 with CASE correct', () => {
+  expect(practiceFun.caesarCipher('Hallo')).toBe('Kdoor');
+});
+
+
 

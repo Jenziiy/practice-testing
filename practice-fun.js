@@ -9,7 +9,7 @@ const calculator = {
 };
 
 const caesarCipher = (aString) => {
-  const alphabet = 'abcdefghijklmnopqrstuvwxyzabc';
+  const alphabet = 'abcdefghijklmnopqrstuvwxyzabcABCDEFGHIJKLMNOPQRSTUVWXYZABC';
   const letterArr = [];
   Array.from(aString).forEach(letter => letterArr.push(alphabet.at(alphabet.indexOf(letter)+3)));
   return letterArr.join("");
